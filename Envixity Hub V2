@@ -1,0 +1,135 @@
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+
+local Window = Library.CreateLib("Universal Hub V1.1", "DarkTheme")
+
+local Tab = Window:NewTab("Player")
+
+local Section = Tab:NewSection("Walk speed/Jumppower")
+
+Section:NewSlider("WalkSpeed", "Changes Walkspeed", 100, 1, function(Value) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+end)
+
+Section:NewSlider("JumpPower", "Changes Jumppower", 100, 1, function(Value2) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value2
+end)
+
+Section:NewToggle("Superman", "Makes you jump High And speeds you", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 34
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
+    else
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+    end
+end)
+
+local Tab = Window:NewTab("Dark Dex")
+
+local Section = Tab:NewSection("Scripts")
+
+Section:NewButton("Dark Dex V4", "Executes Dark Dex v4", function()
+
+     loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-dark-dex-v4-3132"))()
+
+end) 
+
+Section:NewButton("Dark Dex V3", "Executes Dark Dex v3", function()
+
+     loadstring(game:HttpGet("https://scriptblox.com/raw/Dark-Dex-V3_263"))()
+
+end) 
+
+
+local Tab = Window:NewTab("Blox Fruits")
+
+local Section = Tab:NewSection("Scripts")
+
+Section:NewButton("Hoho Hub", "Executes Hoho Hub", function()
+     print("Hello")
+end) 
+
+local Tab = Window:NewTab("Spanish Hub")
+
+local Section = Tab:NewSection("Scripts")
+
+Section:NewButton("Spanish Hub V4", "Executes Spanish Hub V4", function()
+    loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-SPANISH-HUB-V4-THE-GOAT-HUB-8429"))()
+    
+end) 
+
+Section:NewButton("Spanish Hub V3.9", "Executes Spanish Hub V3.9", function()
+    loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Spanish-Hub-V3-9-DIFFERENT-THEMES-8293"))()
+    
+end) 
+
+Section:NewButton("Spanish Hub V2", "Executes Spanish Hub V2", function()
+    loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Spanish-HUB-V2-8258"))()
+end) 
+
+Section:NewButton("Spanish Hub", "Executes Spanish Hub", function()
+    loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Spanish-HUB-8222"))()
+end) 
+
+local Tab = Window:NewTab("Admin Scripts")
+
+local Section = Tab:NewSection("Scripts")
+
+Section:NewButton("Infinite Yield", "Executes Infinite Yield", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+    
+end) 
+
+Section:NewButton("IV Admin V3 FE", "Executes IV Admin V3 FE", function()
+
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/BloodyBurns/Hex/main/Iv%20Admin%20v3.lua"))()
+
+end) 
+
+Section:NewButton("CMD-X V2", "Executes CMD-X V2", function()
+ loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-cmdx-V1-9-9f-5981"))()
+
+end) 
+
+local Tab = Window:NewTab("Universal Guis/Scripts")
+
+local Section = Tab:NewSection("Guis And Scripts")
+
+Section:NewButton("Fly Gui V3", "Executes Fly Gui V3", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+    
+end) 
+
+Section:NewButton("WalkSpeed/Jumpower Gui", "Executes WalkSpeed/JumpPower Gui", function()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/dreampoopo/scripts/main/jailbreakspeedandjump", true))()
+    
+end) 
+
+Section:NewButton("Keyboard Gui", "Executes Keyboard Gui", function()
+
+    loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Mobile-keyboard-6975"))()
+    
+end) 
+
+Section:NewButton("Ez Hub", "Executes Ez Hub", function()
+     loadstring(game:HttpGet("https://scriptblox.com/raw/Ez-Hub_168"))()
+
+end) 
+
+Section:NewButton("Dex Hub", "Executes Dex Hub", function()
+     loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-DexHub-5661"))()
+
+end) 
+
+local Tab = Window:NewTab("Extra/settings")
+
+local Section = Tab:NewSection("Extra/settings")
+
+Section:NewKeybind("Toggle Ui", "Toggle the Ui", Enum.KeyCode.F, function()
+  Library:ToggleUI()
+end) 
+
+local Tab = Window:NewTab("Credits")
+
+local Section = Tab:NewSection("By Yeeeter30")
