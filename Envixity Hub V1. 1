@@ -6,13 +6,15 @@ local Tab = Window:NewTab("Player")
 
 local Section = Tab:NewSection("Walk speed/Jumppower")
 
-Section:NewSlider("WalkSpeed", "Changes Walkspeed", 100, 1, function(Value) -- 500 (MaxValue) | 0 (MinValue)
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+Section:NewTextBox("Walkspeed", "Changes Walkspeed", function(WS)
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = WS
 end)
 
-Section:NewSlider("JumpPower", "Changes Jumppower", 100, 1, function(Value2) -- 500 (MaxValue) | 0 (MinValue)
-    game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value2
+
+Section:NewTextBox("TextboxText", "TextboxInfo", function(JP)
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = JP
 end)
+
 
 Section:NewToggle("Superman", "Makes you jump High And speeds you", function(state)
     if state then
